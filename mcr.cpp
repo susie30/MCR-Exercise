@@ -24,8 +24,8 @@ int main(){
 	for (int n=0; n<9; n++){
 	    turn = !turn;  // use the not-operator to change true to false or false to true.    
 	    if (turn == false)
-		    cout << "Player 1: ";
-    	else
+                cout << "Player 1: ";
+    	    else
     		cout << "Player 2: ";
     	
 		cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
@@ -39,7 +39,7 @@ int main(){
 		    break; // need to terminate the problem
 		}
 	}
-	if(i == 3) // all celles with i=0 to 2 have been inputted above but no winner yet   
+	if(n == 8) // all celles with i=0 to 2 have been inputted above but no winner yet   
 	    cout << "Tie!" << endl;
 	//show the game to console
 	cout << game[0][0] << " " << game[0][1] << " " << game[0][2] << endl;
